@@ -3,7 +3,7 @@
 
 int compare (int a, int b)
 {
-	if(a < b) 
+	if(a < b)// just change the compare and see the accending / decending  
 		return -1;
 	else
 	       	return 1;
@@ -61,3 +61,4 @@ int main()
 	
 return 0;
 }
+//end
