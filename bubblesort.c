@@ -46,12 +46,13 @@ int main()
 	int *arr =  NULL;
 	int arrsize = 0;
 	int i =0;
-	printf("\n Enter array size : ");
+	printf("\n Enter array size you want to sort : ");
 	scanf("%d", &arrsize);
 
 	arr = (int *) malloc( arrsize * (sizeof(int *)));
 	printf("\n ENter array :  ");
-	for( i=0 ; i < arrsize; i++){
+	for( i=0 ; i < arrsize; i++)
+	{
 		scanf("%d", (arr+i));
 	}
 	void (*funp_bubblesort)(int *,int, int (*compare)(int , int)) = &bubblesort;
